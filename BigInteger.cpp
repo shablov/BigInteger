@@ -16,4 +16,8 @@ BigInteger::BigInteger(std::string s) : _isPositive(s.front() != '-') {
             temp_MOD = 1;
         }
     }
+
+    if (number != 0) {
+        _data.push_back(number);
+    }
 }

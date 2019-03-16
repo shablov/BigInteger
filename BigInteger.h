@@ -33,6 +33,9 @@ class BigInteger {
     }
 
     std::string to_string() {
+        if (_data.empty()) {
+            return {};
+        }
         std::string result;
         if (!_isPositive) result.push_back('-');
         result += std::to_string(_data.back());

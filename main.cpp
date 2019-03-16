@@ -4,5 +4,5 @@
 
 int main() {
     BigInteger a("1");
-    std::cout << a.to_string();
-}=
+    std::cout << a.to_string() << std::endl;
+}
